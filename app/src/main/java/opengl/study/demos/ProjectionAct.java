@@ -3,7 +3,7 @@ package opengl.study.demos;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import opengl.study.demos.projection.OGLRender;
+import opengl.study.demos._5projection.OGLRender;
 import opengl.study.demos.view.OGLView;
 
 public class ProjectionAct extends AppCompatActivity {

@@ -3,8 +3,7 @@ package opengl.study.demos;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import opengl.study.demos.move.MoveRender;
-import opengl.study.demos.move.OGLRenderer;
+import opengl.study.demos._4move.OGLRenderer;
 import opengl.study.demos.view.OGLView;
 
 public class ModelTransformationAct extends AppCompatActivity {

@@ -3,9 +3,7 @@ package opengl.study.demos;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import opengl.study.demos.texture.DiceRender;
-import opengl.study.demos.texture.MaskingRender;
-import opengl.study.demos.texture.OGLRenderer;
+import opengl.study.demos._6texture.MaskingRender;
 import opengl.study.demos.view.OGLView;
 
 public class TextureAct extends AppCompatActivity {

@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.ViewGroup;
 
 import opengl.study.demos.view.OGLView;
-import opengl.study.demos.square.OGLRenderer;
+import opengl.study.demos._2square.OGLRenderer;
 
 public class SquareAct extends AppCompatActivity {
 

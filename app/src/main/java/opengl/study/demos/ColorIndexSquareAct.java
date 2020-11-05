@@ -3,7 +3,7 @@ package opengl.study.demos;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import opengl.study.demos.colorindex.OGLRenderer;
+import opengl.study.demos._3colorindex.OGLRenderer;
 import opengl.study.demos.view.OGLView;
 
 public class ColorIndexSquareAct extends AppCompatActivity {

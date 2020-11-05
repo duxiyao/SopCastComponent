@@ -3,10 +3,7 @@ package opengl.study.demos;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import opengl.study.demos.light.DiffuseRender;
-import opengl.study.demos.light.OGLRenderer;
-import opengl.study.demos.light.SpecularRender;
-import opengl.study.demos.texture.MaskingRender;
+import opengl.study.demos._7light.SpecularRender;
 import opengl.study.demos.view.OGLView;
 
 public class LightAct extends AppCompatActivity {

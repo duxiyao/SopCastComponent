@@ -4,8 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.ViewGroup;
 
-import opengl.study.demos.hello.OGLRenderer;
-import opengl.study.demos.hello.RedAlertOGLRenderer;
+import opengl.study.demos._1hello.RedAlertOGLRenderer;
 import opengl.study.demos.view.OGLView;
 
 public class HelloAct extends AppCompatActivity {
