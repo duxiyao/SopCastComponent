@@ -25,6 +25,16 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <activity android:name=".ScreenActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name="opengl.study.DemosActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="opengl.study.demos.HelloAct"
+            android:screenOrientation="portrait"/>
+        <activity android:name="opengl.study.demos.SquareAct"/>
+        <activity android:name="opengl.study.demos.ColorIndexSquareAct"/>
+        <activity android:name="opengl.study.demos.ModelTransformationAct"/>
+        <activity android:name="opengl.study.demos.ProjectionAct"/>
+        <activity android:name="opengl.study.demos.TextureAct"/>
+        <activity android:name="opengl.study.demos.LightAct"/>
     </application>
 
     <uses-permission android:name="android.permission.CAMERA" />

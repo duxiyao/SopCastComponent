@@ -10,6 +10,8 @@ import android.widget.GridView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import opengl.study.DemosActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -23,12 +25,13 @@ public class MainActivity extends AppCompatActivity {
 
     public class HoloTilesAdapter extends BaseAdapter {
 
-        private static final int TILES_COUNT = 4;
+        private static final int TILES_COUNT = 5;
 
         private final int[] DRAWABLES = {
                 R.drawable.blue_tile,
                 R.drawable.green_tile,
                 R.drawable.purple_tile,
+                R.drawable.yellow_tile,
                 R.drawable.yellow_tile
         };
 
@@ -74,6 +77,9 @@ public class MainActivity extends AppCompatActivity {
             } else if(position == 3) {
                 string1 = "Portrait";
                 string2 = "Screen + Rtmp";
+            }else if(position == 4) {
+                string1 = "gl";
+                string2 = "gl";
             }
             textView1.setText(string1);
             textView2.setText(string2);
@@ -90,6 +96,8 @@ public class MainActivity extends AppCompatActivity {
                         goPart();
                     } else if(currentPosition == 3) {
                         goScreen();
+                    }else if(currentPosition == 4) {
+                        gogl();
                     }
                 }
             });
@@ -114,6 +122,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void goScreen() {
         Intent intent = new Intent(this, ScreenActivity.class);
+        startActivity(intent);
+    }
+
+    private void gogl() {
+        Intent intent = new Intent(this, DemosActivity.class);
         startActivity(intent);
     }
 }

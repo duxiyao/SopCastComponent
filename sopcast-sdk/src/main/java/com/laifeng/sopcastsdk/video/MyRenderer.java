@@ -22,7 +22,11 @@ import javax.microedition.khronos.opengles.GL10;
 import com.laifeng.sopcastsdk.mediacodec.VideoMediaCodec;
 import com.laifeng.sopcastsdk.utils.WeakHandler;
 import com.laifeng.sopcastsdk.video.effect.Effect;
+//import com.laifeng.sopcastsdk.video.effect.GPUImageBeautyFilter;
 import com.laifeng.sopcastsdk.video.effect.NullEffect;
+//import com.laifeng.sopcastsdk.video.effect.extra.GPUImageCompatibleFilter;
+
+//import jp.co.cyberagent.android.gpuimage.GPUImage;
 
 /**
  * @Title: MyRenderer
@@ -117,6 +121,10 @@ public class MyRenderer implements GLSurfaceView.Renderer, SurfaceTexture.OnFram
         }
     }
 
+    // TODO: 2020/11/5 test
+//    private GPUImageBeautyFilter gpuImageBeautyFilter= new GPUImageBeautyFilter() ;
+//    private GPUImageCompatibleFilter gpuImageCompatibleFilter=new GPUImageCompatibleFilter(gpuImageBeautyFilter);
+
     @Override
     public void onDrawFrame(GL10 gl) {
         synchronized(this) {
@@ -126,6 +134,10 @@ public class MyRenderer implements GLSurfaceView.Renderer, SurfaceTexture.OnFram
                 updateSurface = false;
             }
         }
+        // TODO: 2020/11/5 test
+//        gpuImageCompatibleFilter.onInit(mVideoWidth,mVideoHeight);
+//        gpuImageCompatibleFilter.onDirectionUpdate(GPUImageCompatibleFilter.FLAG_DIRECTION_ROATATION_90^GPUImageCompatibleFilter.FLAG_DIRECTION_FLIP_VERTICAL);
+//        gpuImageCompatibleFilter.onDraw(mSurfaceTextureId);
         mEffect.draw(mTexMtx);
         if(mRenderScreen != null) {
             mRenderScreen.draw();
