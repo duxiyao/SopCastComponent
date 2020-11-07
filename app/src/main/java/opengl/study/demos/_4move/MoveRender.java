@@ -54,8 +54,8 @@ public class MoveRender implements GLSurfaceView.Renderer {
         GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT);
 
         long currentTimeMillis = System.currentTimeMillis();
-//        updateWithDelta(currentTimeMillis - lastTimeMillis);
-        updateWithDelta2(currentTimeMillis - lastTimeMillis);
+        updateWithDelta(currentTimeMillis - lastTimeMillis);
+//        updateWithDelta2(currentTimeMillis - lastTimeMillis);
         lastTimeMillis = currentTimeMillis;
     }
 
