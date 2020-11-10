@@ -72,6 +72,9 @@ public class DemosActivity extends ListActivity {
             {"7Light",
                     "Light",
                     "LightAct"},
+            {"8FBAct",
+                    "FBAct",
+                    "FBAct"},
     };
 
     /**

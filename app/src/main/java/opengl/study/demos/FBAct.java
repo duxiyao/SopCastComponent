@@ -3,12 +3,12 @@ package opengl.study.demos;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import opengl.study.demos._6texture.DiceRender;
-import opengl.study.demos._6texture.MaskingRender;
-import opengl.study.demos._6texture.OGLRenderer;
+import opengl.study.demos._7light.DiffuseRender;
+import opengl.study.demos._7light.SpecularRender;
+import opengl.study.demos._8framebuffer.OGLRenderer;
 import opengl.study.demos.view.OGLView;
 
-public class TextureAct extends AppCompatActivity {
+public class FBAct extends AppCompatActivity {
 
     private OGLView oglView;
 
@@ -17,8 +17,6 @@ public class TextureAct extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         oglView = new OGLView(this);
         oglView.setRenderer(new OGLRenderer(this));
-//        oglView.setRenderer(new DiceRender(this));
-//        oglView.setRenderer(new MaskingRender(this));
         setContentView(oglView);
     }
 

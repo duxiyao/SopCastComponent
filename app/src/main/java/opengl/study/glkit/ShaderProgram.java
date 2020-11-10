@@ -644,4 +644,8 @@ public class ShaderProgram {
         if(location == -1) return;
         GLES20.glVertexAttrib2f(location, value1, value2);
     }
+
+    public int getProgramHandle(){
+        return programHandle;
+    }
 }

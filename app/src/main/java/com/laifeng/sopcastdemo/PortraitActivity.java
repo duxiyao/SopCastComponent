@@ -19,6 +19,7 @@ import com.laifeng.sopcastsdk.stream.packer.flv.FlvPacker;
 import com.laifeng.sopcastsdk.stream.sender.local.LocalSender;
 import com.laifeng.sopcastsdk.ui.CameraLivingView;
 import com.laifeng.sopcastsdk.utils.SopCastLog;
+import com.laifeng.sopcastsdk.video.effect.BeautyEffect;
 import com.laifeng.sopcastsdk.video.effect.GrayEffect;
 import com.laifeng.sopcastsdk.video.effect.NullEffect;
 
@@ -31,6 +32,7 @@ public class PortraitActivity extends Activity {
     private MultiToggleImageButton mFocusBtn;
     private GestureDetector mGestureDetector;
     private GrayEffect mGrayEffect;
+    private BeautyEffect beautyEffect;
     private NullEffect mNullEffect;
     private ImageButton mRecordBtn;
     private boolean isGray;
@@ -49,6 +51,7 @@ public class PortraitActivity extends Activity {
     private void initEffects() {
         mGrayEffect = new GrayEffect(this);
         mNullEffect = new NullEffect(this);
+        beautyEffect = new BeautyEffect(this);
     }
 
     private void initViews() {
@@ -87,7 +90,7 @@ public class PortraitActivity extends Activity {
                     mLFLiveView.setEffect(mNullEffect);
                     isGray = false;
                 } else {
-                    mLFLiveView.setEffect(mGrayEffect);
+                    mLFLiveView.setEffect(beautyEffect);
                     isGray = true;
                 }
             }

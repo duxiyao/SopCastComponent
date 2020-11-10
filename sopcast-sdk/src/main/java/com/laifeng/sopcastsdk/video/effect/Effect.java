@@ -176,7 +176,6 @@ public abstract class Effect {
         GLES20.glClear(GLES20.GL_DEPTH_BUFFER_BIT | GLES20.GL_COLOR_BUFFER_BIT);
 
         GLES20.glUseProgram(mProgram);
-        runPendingOnDrawTasks();
 
         mVtxBuf.position(0);
         GLES20.glVertexAttribPointer(maPositionHandle,
@@ -198,6 +197,7 @@ public abstract class Effect {
         GLES20.glBindTexture(GLES11Ext.GL_TEXTURE_EXTERNAL_OES, mTextureId);
 
         GLES20.glDrawArrays(GLES20.GL_TRIANGLE_STRIP, 0, 4);
+        runPendingOnDrawTasks();
 
         GLES20.glBindFramebuffer(GLES20.GL_FRAMEBUFFER, 0);
         GlUtil.checkGlError("draw_E");
@@ -295,5 +295,9 @@ public abstract class Effect {
             GLES20.glDeleteProgram(mProgram);
             mProgram = -1;
         }
+    }
+
+    public int getProgram(){
+        return mProgram;
     }
 }
